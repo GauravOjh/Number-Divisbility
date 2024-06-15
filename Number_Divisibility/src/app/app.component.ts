@@ -67,11 +67,12 @@ export class AppComponent {
   ];
 
   calculate(divisibleBy: number) {
-    this.chosenNum = divisibleBy;
-    if (divisibleBy === 1) {
-      this.isClearDisabled = true;
-    } else {
-      this.isClearDisabled = false;
+    this.chosenNum=divisibleBy;
+    if(this.chosenNum===1){
+      this.isClearDisabled=true;
+    }
+    else{
+      this.isClearDisabled=false;
     }
   }
 
